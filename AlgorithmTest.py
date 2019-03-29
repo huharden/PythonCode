@@ -14,5 +14,12 @@ def multiple(x, n=2):
     return s
 
 
+# 可变参数
+def person(name, age, **kw):
+    print('name:', name, 'age:', age, 'other:', kw)
+
+
 print(my_abs(-44))
 print(multiple(2, 4))
+print(abs(4))
+print(person("小明", "5", city='Beijing', sex='女'))
